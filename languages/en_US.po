@@ -1,0 +1,123 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: findword-tsw\n"
+"POT-Creation-Date: 2023-01-20 13:42-0700\n"
+"PO-Revision-Date: 2023-01-20 13:43-0700\n"
+"Last-Translator: \n"
+"Language-Team: Tradesouthwest <tradesouthwest@gmail.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.6\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e;esc_html__;esc_html_e;"
+"esc_attr__;esc_attr_e;_n\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: admin/partials/findword-tsw-admin-display.php:24
+msgid "Find Word TSW"
+msgstr ""
+
+#: admin/partials/findword-tsw-admin-display.php:35
+msgid "Wrapper Class Name"
+msgstr ""
+
+#: admin/partials/findword-tsw-admin-display.php:40
+msgid "Find class name of page content and add here."
+msgstr ""
+
+#: admin/partials/findword-tsw-admin-display.php:45
+msgid "Highlight Color"
+msgstr ""
+
+#: admin/partials/findword-tsw-admin-display.php:50
+msgid "Upgrade to FindWord Plus to activate. "
+msgstr ""
+
+#: admin/partials/findword-tsw-admin-display.php:52
+#: admin/partials/findword-tsw-admin-display.php:105
+msgid "upgrade plugin link opens in new window"
+msgstr ""
+
+#: admin/partials/findword-tsw-admin-display.php:57
+msgid "Adiminstrator Notes"
+msgstr ""
+
+#: admin/partials/findword-tsw-admin-display.php:62
+msgid "Notes for reference or reminders etc."
+msgstr ""
+
+#: admin/partials/findword-tsw-admin-display.php:72
+msgid "Help/Instructions"
+msgstr ""
+
+#: admin/partials/findword-tsw-admin-display.php:73
+msgid "open arrows for more"
+msgstr ""
+
+#: admin/partials/findword-tsw-admin-display.php:75
+msgid "Use Widget for better page coverage"
+msgstr ""
+
+#: admin/partials/findword-tsw-admin-display.php:76
+msgid ""
+"If you are wanting to include the sidebars and the header and the footer of "
+"the page as part of your search,  \n"
+"in this case, you would change the name of the Wrapper Class to the same "
+"name as your body class for example, in which \n"
+"the body tag element would get a new data type of \"data-finder-content\" "
+"once you save your Wrapper Class name to the \n"
+"plugin Options Settings page. The default Wrapper class is hentry, which is "
+"the article or post class."
+msgstr ""
+
+#: admin/partials/findword-tsw-admin-display.php:87
+msgid "How do I setup FindWord TSW to make it work?"
+msgstr ""
+
+#: admin/partials/findword-tsw-admin-display.php:88
+msgid "1. Place widget FindWord or place shortcode `[findword]` to page."
+msgstr ""
+
+#: admin/partials/findword-tsw-admin-display.php:89
+msgid ""
+"2. Find class name of page content and add to Setting: Wrapper Class Name"
+msgstr ""
+
+#: admin/partials/findword-tsw-admin-display.php:96
+msgid "Why Buy FindWord TSW PLUS?"
+msgstr ""
+
+#: admin/partials/findword-tsw-admin-display.php:97
+msgid "Clipboard organizer to save text to."
+msgstr ""
+
+#: admin/partials/findword-tsw-admin-display.php:98
+msgid "Dictonary of your predefined keywords."
+msgstr ""
+
+#: admin/partials/findword-tsw-admin-display.php:99
+msgid "More search regions."
+msgstr ""
+
+#: admin/partials/findword-tsw-admin-display.php:103
+msgid "Upgrade to FindWord Plus. "
+msgstr ""
+
+#: public/findword-tsw-widget.php:13
+msgid "Find Words"
+msgstr ""
+
+#: public/findword-tsw-widget.php:15
+msgid "Adds Widget for findword-tsw Plugin"
+msgstr ""
+
+#: public/findword-tsw-widget.php:80
+msgid "Widget Findwords"
+msgstr ""
+
+#: public/findword-tsw-widget.php:85
+msgid "Title:"
+msgstr ""

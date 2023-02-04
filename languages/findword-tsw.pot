@@ -1,0 +1,18 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: findword-tsw\n"
+"POT-Creation-Date: 2022-01-02 21:49-0800\n"
+"PO-Revision-Date: 2022-01-02 21:49-0800\n"
+"Last-Translator: \n"
+"Language-Team: Tradesouthwest <tradesouthwest@gmail.com>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e;esc_html__;esc_html_e;"
+"esc_attr__;esc_attr_e;_n\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+
+
