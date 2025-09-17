@@ -1,14 +1,14 @@
 === FindWord TSW ===
 Contributors:      tradesouthwest
 Donate link:       https://paypal.me/tradesouthwest
-Tags:              search, list, find, words, text, form, count, keywords
-Requires at least: 4.6
-Tested up to:      6.5
+Tags:              search, find, words, text, keywords
+Requires at least: 4.9
+Tested up to:      6.8.2
 Stable tag:        trunk
 License:           GPLv3
 License URI:       http://www.gnu.org/licenses/gpl-3.0.html
 
-Search helper for on page article word search.
+Search helper for on-page, article word search.
 
 == Description ==
 
@@ -30,6 +30,7 @@ Why upgrade:
 - Change box-shadow and button colors as well as icons in buttons.
 - Change pixel size inside findword content area.
 - Select or remove modules you want readers to see.
+- FREE UNTIL FURTHER NOTICE.
 
 == Installation ==
 
@@ -46,6 +47,10 @@ This section describes how to install the plugin and get it working.
 2. Admin options settings page
 
 == Changelog ==
+= 1.1.8 =
+* tested up to 6.8.2
+* adding readme details
+
 = 1.1.7 =
 * tested on WP 6.5
 * update version

@@ -9,14 +9,14 @@
  * that starts the plugin.
  *
  * @link              https://tradesouthwest.com
- * @since             1.1.2
+ * @since             1.1.8
  * @package           Findword_Tsw
  *
  * @wordpress-plugin
  * Plugin Name:       Findword TSW
  * Plugin URI:        https://themes.tradesouthwest.com/plugins
  * Description:       Search tool helper to find text on page. Options located at Settings and Help under Settings FindWord
- * Version:           1.1.7
+ * Version:           1.1.8
  * Author:            Tradesouthwest
  * Author URI:        https://tradesouthwest.com
  * License:           GPLv3
@@ -35,7 +35,7 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'FINDWORD_TSW_VERSION', '1.1.7' );
+define( 'FINDWORD_TSW_VERSION', '1.1.8' );
 
 /**
  * The code that runs during plugin activation.
