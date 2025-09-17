@@ -3,8 +3,8 @@ Contributors:      tradesouthwest
 Donate link:       https://paypal.me/tradesouthwest
 Tags:              search, list, find, words, text, form, count, keywords
 Requires at least: 4.6
-Tested up to:      6.1.1
-Stable tag:        1.0.9
+Tested up to:      6.5
+Stable tag:        trunk
 License:           GPLv3
 License URI:       http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -12,8 +12,7 @@ Search helper for on page article word search.
 
 == Description ==
 
-Search tool helper to find text on page. Can be used a a sidebar widget to cover any volume of text 
-either on the page or in the content of the article itself. This is set as a default to find text specifically that is in a single post article. You can expand this by changing the name of the CSS class that your searchable text is enclosed in.
+Search tool helper to find text on page. Can be used a a sidebar widget to cover any volume of text either on the page or in the content of the article itself. This is set as a default to find text specifically that is in a single post article. You can expand this by changing the name of the CSS class that your searchable text is enclosed in.
 
 Let us say you are wanting to include the sidebars and the header and the footer of the page as part of your search. In this case, you would change the name of the Wrapper Class to the same name as your body class for example, in which the body tag element would get a new data type of "data-finder-content" once you save your Wrapper Class name to the plugin Options Settings page.
 
@@ -22,6 +21,7 @@ Helps your readers find text on the page if articles are long. Can also be used 
 Upgrade link for this plugin: [FindWordPlus](https://tradesouthwest.com/findword/)
 Why upgrade:
 
+- Fixed position of widget on page.
 - Clipboard organizer to save keyword text to.
 - Word counter for page text content.
 - Clock for timing reads.
@@ -46,6 +46,37 @@ This section describes how to install the plugin and get it working.
 2. Admin options settings page
 
 == Changelog ==
+= 1.1.7 =
+* tested on WP 6.5
+* update version
+
+= 1.1.6 =
+* corrected php render in widget
+
+= 1.1.5 =
+* corrected link text
+* file inc/class-findowrod-tsw
+* file findword-tsw
+* file admin/partials/-admin-display
+* file this
+
+= 1.1.4 =
+* added link to free download
+
+= 1.1.3 =
+* fixed checked
+
+= 1.1.2 =
+* fixed scrollto for Chrome and Opera
+
+= 1.1.1 =
+* fixed default values for options
+* added uninstall hook
+
+= 1.1.0 =
+* put js in footer
+* fixed jquery slim animate
+
 = 1.0.9 =
 * Added context for premium version link
 

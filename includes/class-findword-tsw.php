@@ -70,7 +70,7 @@ class Findword_Tsw {
 		if ( defined( 'FINDWORD_TSW_VERSION' ) ) {
 			$this->version = FINDWORD_TSW_VERSION;
 		} else {
-			$this->version = '1.0.5';
+			$this->version = '1.1.7';
 		}
 		$this->plugin_name = 'findword-tsw';
 

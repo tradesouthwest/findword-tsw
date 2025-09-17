@@ -20,7 +20,7 @@
  * https://github.com/tommcfarlin/WordPress-Plugin-Boilerplate/pull/123#issuecomment-28541913
  *
  * @link       https://tradesouthwest.com
- * @since      1.0.0
+ * @since      1.1.1
  *
  * @package    Findword_Tsw
  */
@@ -29,3 +29,11 @@
 if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 	exit;
 }
+
+	$option_one = "fwtsw_option_main[fwtsw_wrapper_class]";
+	$option_two = "fwtsw_option_main[fwtsw_highlight_color]";
+	delete_option( $option_one ); 
+	delete_option( $option_two ); 
+	if ( is_multisite() )
+	delete_site_option( $option_one );
+	delete_site_option( $option_two );

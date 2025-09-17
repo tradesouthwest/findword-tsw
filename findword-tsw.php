@@ -9,14 +9,14 @@
  * that starts the plugin.
  *
  * @link              https://tradesouthwest.com
- * @since             1.0.9
+ * @since             1.1.2
  * @package           Findword_Tsw
  *
  * @wordpress-plugin
  * Plugin Name:       Findword TSW
  * Plugin URI:        https://themes.tradesouthwest.com/plugins
  * Description:       Search tool helper to find text on page. Options located at Settings and Help under Settings FindWord
- * Version:           1.0.9
+ * Version:           1.1.7
  * Author:            Tradesouthwest
  * Author URI:        https://tradesouthwest.com
  * License:           GPLv3
@@ -35,7 +35,7 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'FINDWORD_TSW_VERSION', '1.0.9' );
+define( 'FINDWORD_TSW_VERSION', '1.1.7' );
 
 /**
  * The code that runs during plugin activation.
@@ -70,6 +70,23 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-findword-tsw.php';
 require_once plugin_dir_path( __FILE__ ) 
 	. 'public/partials/findword-tsw-public-display.php';
 
+/**
+ * Proper ob_end_flush() for all levels
+ *
+ * This replaces the WordPress `wp_ob_end_flush_all()` function
+ * with a replacement that doesn't cause PHP notices.
+ *
+ * @since 1.0.4
+ * @return Boolean Only runs when option is activated from this plugin.
+ */
+$twsdbug = 'twsshow';
+if ( $twsdbug != 'twshide' ) :  
+    remove_action( 'shutdown', 'wp_ob_end_flush_all', 1 );
+    add_action( 'shutdown', function() {
+    
+        while ( @ob_end_flush() );
+} );
+endif;  
 /**
  * Begins execution of the plugin.
  *

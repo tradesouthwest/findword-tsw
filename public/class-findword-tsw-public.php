@@ -100,15 +100,15 @@ class Findword_Tsw_Public {
 			. 'js/highlight.js', 
 			array( 'jquery' ), 
 			'3', 
-			false );
+			true );
 		wp_enqueue_script( 'findword-tsw-scrollto', plugin_dir_url( __FILE__ ) 
 			. 'js/findword-tsw-scrollto.js', 
 			array( 'jquery' ), // uses amd
 			'2.1.3', 
-			false );
-		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) 
+			true );
+		wp_enqueue_script( $this->plugin_name . '-public', plugin_dir_url( __FILE__ ) 
 			. 'js/findword-tsw-public.js', 
-			array( 'jquery' ), 
+			array( 'jquery', 'highlight-tsw', 'findword-tsw-scrollto' ), 
 			$this->version, 
 			true );
 		wp_enqueue_script( $this->plugin_name . '-slideto', plugin_dir_url( __FILE__ ) 

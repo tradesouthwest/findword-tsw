@@ -33,35 +33,31 @@ function findword_settings_page(){
     <table class="form-table"><tbody>
         <tr valign="top">
         <th scope="row"><?php esc_html_e( 'Wrapper Class Name', 'findword-tsw'); ?></th>
-        <td><input type="text" 
+        <td>
+        <?php  // set option value
+        $fwtsw_wrapper = ( empty( get_option('fwtsw_option_main')['fwtsw_wrapper_class'])) 
+                     ? 'hentry' : get_option('fwtsw_option_main')['fwtsw_wrapper_class']; ?>
+        <input type="text" 
             name="fwtsw_option_main[fwtsw_wrapper_class]" 
-            value="<?php echo esc_attr( 
-            get_option('fwtsw_option_main')['fwtsw_wrapper_class'], 'hentry' ); ?>">
+            value="<?php echo esc_attr( $fwtsw_wrapper ); ?>"> = <?php echo esc_html( $fwtsw_wrapper ); ?>
             <p><small><?php esc_html_e('Find class name of page content and add here.', 
             'findword-tsw'); ?></small></p></td>
         </tr>
 
         <tr valign="top">
         <th scope="row"><?php esc_html_e( 'Highlight Color', 'findword-tsw'); ?></th>
-        <td><input type="color" 
+        <td>
+        <?php // set option value
+        $fwtsw_highlight = ( empty( get_option('fwtsw_option_main')['fwtsw_highlight_color'])) 
+                      ? '#729fcf' : get_option('fwtsw_option_main')['fwtsw_highlight_color']; ?>
+        <input type="color" 
             name="fwtsw_option_main[fwtsw_highlight_color]" 
-            value="<?php echo esc_attr( 
-            get_option( 'fwtsw_option_main')['fwtsw_highlight_color'], '#729fcf' ); ?>">
+            value="<?php echo esc_attr( $fwtsw_highlight ); ?>"> = <?php echo esc_html( $fwtsw_highlight ); ?>
             <p><small><em><?php esc_html_e('Upgrade to FindWord Plus to activate. ', 
             'findword-tsw'); ?></em><a href="https://tradesouthwest.com/findword/" 
             title="<?php esc_attr_e('upgrade plugin link opens in new window', 'findword-tsw'); ?>" 
             target="_blank">Plus <sup>[^]</sup></a></small></p></td>
         </tr>
-
-        
-
-
-
-
-
-
-
-
 
     </tbody></table>
         <?php submit_button(); ?>
@@ -93,7 +89,7 @@ plugin Options Settings page. The default Wrapper class is hentry which, is the 
         <tr valign="top">
         <th scope="row"></th>
         <td><details>
-           <summary><?php esc_html_e( 'Why Buy FindWord TSW PLUS?', 'findword-tsw'); ?></summary>
+           <summary><?php esc_html_e( 'Why Get FindWord TSW PLUS?', 'findword-tsw'); ?></summary>
             <small><ul><li><?php esc_html_e('Clipboard organizer to save keyword text to.', 'findword-tsw'); ?></li>
             <li><?php esc_html_e('Word counter for page text content.', 'findword-tsw'); ?></li>
             <li><?php esc_html_e('Clock for timing reads.', 'findword-tsw'); ?></li>
@@ -101,7 +97,8 @@ plugin Options Settings page. The default Wrapper class is hentry which, is the 
             <li><?php esc_html_e('Add promotion link or advert link to tool box.', 'findword-tsw'); ?></li>
             <li><?php esc_html_e('Change box-shadow and button colors as well as icons in buttons.', 'findword-tsw'); ?></li>
             <li><?php esc_html_e('Change pixel size inside findword content area.', 'findword-tsw'); ?></li>
-            <li><em><?php esc_html_e('Upgrade to FindWord TSW Plus. ', 
+            <li><?php esc_html_e('For a limited time, Findword TSW Plus will be FREE of charge!.', 'findword-tsw'); ?></li>
+            <li><em><?php esc_html_e('Upgrade to FindWord TSW Plus. Free until December 2023. ', 
             'findword-tsw'); ?></em><a href="<?php echo esc_url('https://tradesouthwest.com/findword/'); ?>" 
             title="<?php esc_attr_e('upgrade plugin link opens in new window', 'findword-tsw'); ?>" 
             class="button button-secondary" target="_blank">Findword TSW Plus <sup>[^]</sup></a></li>
